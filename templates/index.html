@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio | Alan</title>
+  <!-- Favicon-->
+  <link type="image/png" sizes="96x96" rel="icon" href="static/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- mycss -->
+  <style>
+    .img-profil {
+      width: 300px; 
+      height: 300px; 
+      object-fit: cover; 
+      border: 2.5px solid rgb(78, 78, 243); 
+    }
+
+    @media (max-width: 1200px) {
+      .img-profil {
+        width: 150px; 
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 768px) {
+        .scm {
+            display: none;
+        }
+    }
+
+    body {
+    min-height: 1800px;
+    overflow-x: hidden;
+    }
+
+
+    .jumbotron {
+      padding-top: 2rem;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .mycards {
+        margin: 20px auto 0px auto;
+        width: 95%;
+        max-width: 1200px;
+    }
+
+    .card-img-top {
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .mycomment{
+        color: gray;
+    }
+
+    .mypost {
+        width: 95%;
+        max-width: 500px;
+        margin: 20px auto 0px auto;
+        padding: 20px;
+        box-shadow: 0px 0px 3px 0px gray;
+    }
+
+    .mybtns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .mybtns > button {
+        margin-right: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 2rem; /* Ubah nilai sesuai kebutuhan */
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: rgb(78, 78, 243);">
+    <div class="container">
+      <h1 class="navbar-brand" href="#home">Alan</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Tutup Navbar -->
+  <!-- Jumbotron -->
+  <section class="jumbotron text-center" id="home">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="transform: rotate(180deg); margin-top: -33px;">
+        <path fill="#6060FF" fill-opacity="1" d="M0,64L30,80C60,96,120,128,180,122.7C240,117,300,75,360,53.3C420,32,480,32,540,69.3C600,107,660,181,720,224C780,267,840,277,900,240C960,203,1020,117,1080,117.3C1140,117,1200,203,1260,218.7C1320,235,1380,181,1410,154.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+    </svg>
+    <img src="static/NAW127.jpeg" alt="alan" width="200" class="img-profil rounded-circle shadow-sm img-thumbnail">
+    <h1 class="display-4">Hello, I'm Alan</h1>
+    <p class="lead">Student LX | FullStack Web Development - Grup 5A</p>
+  </section>  
+  <!-- Akhir Jumbotron -->
+  <!-- About -->
+  <section style="margin-top: 3rem;" class="bg-light py-5" id="about">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>About Me</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center fs-5 text-center">
+        <div class="col-4">
+          <p>Halo! perkenalkan saya Nawang Alan Andrian, seorang mahasiswa Sistem Informasi. Saya memiliki minat yang besar dalam teknologi informasi, khususnya dalam pengembangan perangkat lunak dan manajemen sistem.  </p>
+        </div>
+        <div class="col-4">
+          <p>Sejak awal studi saya, saya telah aktif terlibat dalam berbagai proyek dan kegiatan di bidang teknologi, yang telah membantu saya mengasah keterampilan dan pengetahuan saya terkait perkembangan teknologi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir About -->
+  <!-- Education -->
+  <section style="margin-top: 1rem;" id="education">
+      <div class="row text-center mb-3">
+        <div class="col">
+            <hr class="w-25 mx-auto">
+                <h2>Education</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="card mx-5" style="box-shadow: 0px 0px 3px 0px gray;">
+            <div class="card-body">
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Universitas Muria Kudus</h3>
+                        <div class="subheading mb-3">Sistem Informasi - Semester 6</div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-secondary">October 2021 - NOW</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between" style="margin-top: -3rem;">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">SMAN 1 Gebog</h3>
+                        <div class="subheading mb-3">MIPA</div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-secondary">August 2018 - July 2021</span></div>
+                </div>
+            </div>
+        </div>
+    </div>     
+  </section>
+  <!-- Akhir Education -->
+  <!-- Projects -->
+  <section style="margin-top: 2rem;" id="projects" class="bg-light py-5">
+      <div class="row text-center mb-3">
+        <div class="col">
+                <h2>Projects</h2>
+        </div>
+      </div>
+    <div class="mycards" style="margin-bottom: 15px;">
+        <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+          <div class="col">
+            <div class="card h-100">
+                <img src="https://i.pinimg.com/564x/97/6b/c0/976bc03ef04f15285c3ed4eeae14071e.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Project Pitch Deck</h5>
+                  <div class="subheading mb-3">Business Analyst</div>
+                  <p class="card-text">Merancang strategi dalam pengembangan ide platform.</p>
+                  <p class="mycomment">October 2023 - December 2023</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <img src="https://i.pinimg.com/564x/6a/36/aa/6a36aa097e67b125714c739a40080a3e.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Website Based Jacket Sales</h5>
+                  <div class="subheading mb-3">Junior Web Developer</div>
+                  <p class="card-text">Membangun desain tampilan dan ide penjualan dalam website.</p>
+                  <p class="mycomment">June 2023 - July 2023</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+                <img src="https://i.pinimg.com/564x/81/38/f1/8138f16859865e1ad8572814561d7d02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">UI Prototype JustInMind</h5>
+                  <div class="subheading mb-3">UI Designer</div>
+                  <p class="card-text">Merancang antarmuka pengguna (UI) sistem layanan penjualan.</p>
+                  <p class="mycomment">April 2022 - June 2022</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Akhir Projects -->
+  <!-- Contact Me -->
+    <section style="margin-top: 3rem;" id="contact">
+        <div class="row text-center mb-3">
+            <div class="col">
+                <hr class="w-25 mx-auto">
+                    <h2>Contact Me</h2>
+                <hr class="w-25 mx-auto">
+            </div>
+          </div>
+          
+        <div class="mypost">
+            <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Enter Your Name">
+            <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Enter Your Email">
+            <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating">
+            <textarea class="form-control" placeholder="Enter Your Message" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Message</label>
+            </div>
+            <div class="mybtns">
+            <button type="button" class="btn btn-dark">Send Message</button>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -7px;" viewBox="0 0 1440 320"><path fill="#6060FF" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,197.3C320,213,400,203,480,176C560,149,640,107,720,128C800,149,880,235,960,261.3C1040,288,1120,256,1200,234.7C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </section>
+  <!-- Akhir Contact Me -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<footer class="py-4 mt-auto" style="background-color: rgb(78, 78, 243); color: white;">
+  <div class="container-fluid px-4">
+    <div class="d-flex align-items-center justify-content-between small">
+            <div>
+              <span>
+                  Copyright © <a href="https://github.com/nawangandrian/" target="_blank" style="color: white;">Nawang Alan Andrian</a>
+              </span>
+            </div>
+            <div>
+                <div style="margin-bottom: 10px;">
+                  Social Media:
+                  <!-- Font Awesome Icons -->
+                  <a href="https://www.instagram.com/nawang_andrian" ><i class="fab fa-instagram" style="color: white; font-size: 20px; margin-right: 5px; margin-left: 5px;"></i></a>
+                  <a href="https://t.me/Nawang_127" ><i class="fab fa-telegram" style="color: white; font-size: 18px; margin-right: 5px;"></i></a>
+                  <a href="https://www.tiktok.com/@nawang_andrian" ><i class="fab fa-tiktok" style="color: white; font-size: 18px; margin-right: 10px;"></i></a>
+                </div>
+                  <a href="#" style="color: white; margin-right: 10px;">Privacy Policy</a>
+                  &middot;
+                  <a href="#" style="color: white; margin-left: 10px;">Terms &amp; Conditions</a>
+            </div>
+    </div>
+  </div>
+</footer>
+</html>
